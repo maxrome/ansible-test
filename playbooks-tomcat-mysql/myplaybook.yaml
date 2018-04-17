@@ -1,0 +1,12 @@
+---
+# This playbook deploys a simple standalone Tomcat + mysql
+
+- hosts: tomcat
+  roles:
+    - tomcat
+  vars:
+    - mysql_ip: ${mysql_hostname}
+
+- hosts: mysql
+  roles:
+    - mysql
