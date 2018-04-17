@@ -5,7 +5,7 @@
   roles:
     - tomcat
   vars:
-    - mysql_ip: ${mysql_hostname}
+    - mysql_ip: $mysql_softfire-internal
 
 - hosts: mysql
   roles:
