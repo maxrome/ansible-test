@@ -6,7 +6,9 @@
     - tomcat
   vars:
     - mysql_ip: $mysql_softfire-internal
+  remote_user: ubuntu
 
 - hosts: mysql
   roles:
     - mysql
+  remote_user: ubuntu
