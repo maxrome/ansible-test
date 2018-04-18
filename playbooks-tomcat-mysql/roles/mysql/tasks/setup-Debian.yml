@@ -7,6 +7,9 @@
   apt: update_cache=yes
   when: mysql_installed.stat.exists == false
 
+ name: Ensure Python is installed.
+  apt: "name=python state=present"
+
 - name: Ensure MySQL Python libraries are installed.
   apt: "name=python-mysqldb state=present"
 
