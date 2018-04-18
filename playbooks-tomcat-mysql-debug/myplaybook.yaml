@@ -1,0 +1,14 @@
+---
+# This playbook deploys a simple standalone Tomcat + mysql
+
+- hosts: tomcat
+  roles:
+    - ping
+  vars:
+    - mysql_ip: $mysql_softfire-internal
+#  ansible_user: ubuntu
+
+- hosts: mysql
+  roles:
+    - ping
+#  ansible_user: ubuntu

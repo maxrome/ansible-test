@@ -1,0 +1,6 @@
+---
+- name: ping
+  ping:
+
+- name: debug message
+  debug: msg="wow it works!"
