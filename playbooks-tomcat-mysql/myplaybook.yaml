@@ -6,9 +6,9 @@
     - tomcat
   vars:
     - mysql_ip: $mysql_softfire-internal
-  ansible_user: ubuntu
+#  ansible_user: ubuntu
 
 - hosts: mysql
   roles:
     - mysql
-  ansible_user: ubuntu
+#  ansible_user: ubuntu
