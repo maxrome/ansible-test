@@ -6,6 +6,7 @@
     - tomcat
   vars:
     - mysql_ip: $mysql_softfire-internal
+    - http_port: 8080
 
 - hosts: mysql
   roles:
